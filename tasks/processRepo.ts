@@ -15,6 +15,7 @@ export class ProcessRepo extends BaseSearchTask<RepoItem> {
     super();
   }
 
+  // to do : fix this json manipulation (not good)
   private prepareResult(issues: IssuesCount[]): RepoItem {
     var issuesObject: any = {};
     issues.forEach((value) => {
@@ -25,12 +26,13 @@ export class ProcessRepo extends BaseSearchTask<RepoItem> {
         issuesObject = extend(true, issuesObject, { 'closed': value.total });
       }
     });
+    issuesObject = { 'issues': issuesObject};
 
     return extend(true, this.item, issuesObject) as RepoItem;
   }
 
   execute(cb: (err: Error, data?: RepoItem) => void): void {
-    var requests: Array<AsyncFunction<IssuesCount>>;
+    var requests: Array<AsyncFunction<IssuesCount>> = new Array<AsyncFunction<IssuesCount>>();
     requests.push((callback) => {
       var openedIssuesTask = new SearchRepoIssues(this.item.full_name, 'open');
       openedIssuesTask.execute((err, data) => {
