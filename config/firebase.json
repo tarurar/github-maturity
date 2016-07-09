@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "github-maturity",
+  "private_key_id": "262b1634e47a3493ec1da6224aeae50095e56600",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC73mGG3hQ8DCxz\n/ybXksFD2DADHbbfI18hsjUtyY0VKsnoePah4EyZhQNY9jPBa/UYgs0NYXYaqIdH\ncFa+qDkdpbBWhD+iWWngc7+/5DEpt53kdQTSUELac2sVLmRs2ncyfnm/4CujDaSK\nsh39WuiN6gRmFZTczvciRgP8wOmejrIgT8A0EE+CH1fguh9c1Ij5t2Q+fs++M31q\nbbivtMSRv+5yulfcMQ6Wn3uFxaz248luDIQxROKLDImnaYwYdU4UlM19QryezY6H\nVaWo6oleQJjYdRnjheIYWurYkjkx1gnNjHgJTu3XMRy9qWOR+YnjPUob0MzgPX2Z\nHlgXOSczAgMBAAECggEARGidqraDN7pXFYX7ZtQRe9rk4L2ZMXd31JVHt/yEWwjR\nrM0fQaKjQeOlbGd6QRxGiz5V3GF42Aw19lV5wMMQyTLkGxzc7wkP/KMpV36ISGCM\nJfxWXR7MuS799yCFgP2sGb7kJnJCcYUuPTLOqMrJk6N7JpEFO8JBS0Gjgg3dA9bi\nXzZ7LtccvDobv4vctR33Ql4ut1FJkbLpDByE4qACuiIuH3Jdj/L7LQUb9wimF2Ab\ncRYCD+Mu6BhpcMAYWEbJen9FkGwT9mcZOE3JOA7pSfMY4mDxTm/wT/TX7UEFq/5D\nOZzcZ1alMIfETL1Riz4F21GCVyjikloLRL2mLdNkgQKBgQDbrRUkCIMkldd07NoB\n51GQ+P6G3kEOoM/0lVTO6p+UnJDEyAqstDZu9CiZYnmlEpeXohzBORG6AcDIfWIU\n78eEcnXvRltbTg4gbWkrrOdGP4VFzy8cPgFMvWXDw/mZWRtqaFC5sqyjQvHhpITz\nkRVrC5r7e518JWz516+U0JtTqwKBgQDa7uLKdKUop+Ubv1umVLMnB0WY6y7l5j6a\nQ6i8d10L+e//KycpXz2zdX3o9YFxBUWOYhr7Hj9bkFcm7w3527U8MFDQfJJfJLCA\nYyN4dnnZuWrhhh8TMaXlFTd+FD4jnJzv+z7EutattanaVMUGRIWJEplSORixU/P7\n1I+Du2ZymQKBgCgIP60EXBnDsLLfIs9r/yJDLecYA5UN2zfAKudWPGSRr5QcvE1C\nvhS0K93f4zkgzT1VzpWrt75E6YPfzYrxM1PApBtJoAZgkBR6u8q4xKC5nKjfG7+y\n0PvSHARz5z15zpQylFty4yERZxDusUfNrbCHOeQQX9+q1lQlaRredR/nAoGBAM/y\nJqd1s4myLwLz9vE9cgyX85sThzAGSV/s89BO76n4c+RB8KhzNf/GkRk8Vv4qq65Z\nsJbkW/l0V9M7LGMuNC4/FgNwzvZfuuW3RHGe1o3ed45N/iYU+iVkyZiPUZYxoz6t\nvSjO7imAaxxdd+ZEHzHa4JYgdTu5Kf0AIHBXBy/BAoGAStqOBEps376av9mjU+CW\ndtxqlkiJuW1G5rDCEhain3gEdjI7VG07nlSJFMadbdGC0Zws0j1I6U5HzNFaTDXs\n/Lw+73wurAEcQz8ltdnaNFjnHpaVN3I1H436O26djiYkEAynbjJ1rXgUr3yjB0Je\nEyJ9hS0o/AP+0t2ZG7Cf5k4=\n-----END PRIVATE KEY-----\n",
+  "client_email": "nodejsapp@github-maturity.iam.gserviceaccount.com",
+  "client_id": "112929155589493563633",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://accounts.google.com/o/oauth2/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/nodejsapp%40github-maturity.iam.gserviceaccount.com"
+}
