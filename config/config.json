@@ -8,6 +8,7 @@
       "repos": "search/repositories",
       "issues": "search/issues"
     },
+    "database": "https://github-maturity.firebaseio.com",
     "query": {
       "repos": "q=stars:>8000+forks:>10000"
     }

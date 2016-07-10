@@ -1,10 +1,14 @@
 import * as http from 'http';
 
-export interface Task<TResult> {
-  execute(cb: (err: Error, data?: TResult) => void): void;
+export interface Task<T> {
+  execute(cb: (err: Error, data?: T) => void): void;
 }
 
 export abstract class BaseTask<T> implements Task<T> {
+  abstract execute(cb: (err: Error, data?: T) => void): void;
+}
+
+export abstract class BaseSaveTask<T> implements Task<T> {
   abstract execute(cb: (err: Error, data?: T) => void): void;
 }
 
