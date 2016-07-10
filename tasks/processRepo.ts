@@ -53,7 +53,6 @@ export class ProcessRepo extends BaseSearchTask<RepoItem> {
 
     async.parallel(requests, (err, results) => {
       if (err) throw err;
-
       cb(null, this.prepareResult(results));
     });
   }
