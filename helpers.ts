@@ -1,5 +1,6 @@
 import * as path from 'path';
 import * as config from './config';
+import * as http from 'http';
 
 export class RequestOptionsHelper {
   private static host: string = config.get('urls:host');
