@@ -23,7 +23,7 @@ export interface FirebaseRepoItemValue {
   owner: Owner;
   size: number;
   stars: number;
+  language: string;
   updateDate: Date;
   url: string;
 }
-

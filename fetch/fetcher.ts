@@ -1,4 +1,4 @@
-import {RepoItem} from '../model';
+import {RepoItem, FirebaseRepoItemValue} from '../model';
 import {SearchTopRepo} from '../tasks/searchTopRepo';
 import {ProcessRepo} from '../tasks/processRepo';
 import * as api from '../api';
@@ -51,16 +51,23 @@ export class RepoItemsFetcher extends BaseFetcher<RepoItem[]> {
  * @class FireBaseFetcher
  * @extends {BaseFetcher<any>}
  */
-export class FireBaseFetcher extends BaseFetcher<any> {
+export class FireBaseFetcher extends BaseFetcher<FirebaseRepoItemValue[]> {
   constructor(private dbContext: any) {
     super();
   }
 
-  execute(cb: (err: Error, data: any) => void): void {
+  execute(cb: (err: Error, data: FirebaseRepoItemValue[]) => void): void {
     var tableRef = this.dbContext.child('repos');
+    var results: Array<FirebaseRepoItemValue> = new Array<FirebaseRepoItemValue>();
 
     tableRef.once('value', (snapshot) => {
-      cb(null, snapshot.val());
+      let table = snapshot.val();
+      for (let key in table) {
+        let item = table[key] as FirebaseRepoItemValue;
+        results.push(item);
+      }
+
+      cb(null, results);
     }, (err) => {
       cb(err, null);
     });

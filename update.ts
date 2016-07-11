@@ -2,6 +2,7 @@ import {RepoItemsFetcher, FireBaseFetcher} from './fetch/fetcher';
 import {SaveRepo} from './tasks/saveRepo';
 import * as config from './config';
 import * as async from 'async';
+import {FirebaseRepoItemValue} from './model';
 var firebase = require('firebase');
 
 firebase.initializeApp({
@@ -15,7 +16,11 @@ var dbRef = db.ref('/');
 var fetcher = new FireBaseFetcher(dbRef);
 fetcher.execute((err, data) => {
   if (err) throw err;
-  console.log(data);
+
+  data.forEach((value) => {
+    console.log(value.full_name);
+  });
+  process.exit(0);
 });
 
 /*
