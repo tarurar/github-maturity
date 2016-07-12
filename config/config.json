@@ -10,7 +10,11 @@
     },
     "database": "https://github-maturity.firebaseio.com",
     "query": {
-      "repos": "q=stars:>8000+forks:>10000"
+      "repos": "q=stars:>5000+forks:>5000"
     }
+  },
+  "github": {
+    "clientId": "a207d1e34c15b5bfbd33",
+    "clientSecret": "31e043641136b66ea1a36899f305f8f63c4c65d3"
   }
 }

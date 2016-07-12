@@ -13,17 +13,6 @@ firebase.initializeApp({
 var db = firebase.database();
 var dbRef = db.ref('/');
 
-var fetcher = new FireBaseFetcher(dbRef);
-fetcher.execute((err, data) => {
-  if (err) throw err;
-
-  data.forEach((value) => {
-    console.log(value.full_name);
-  });
-  process.exit(0);
-});
-
-/*
 var fetcher = new RepoItemsFetcher();
 fetcher.execute((err, data) => {
   if (err) throw err;
@@ -45,4 +34,3 @@ fetcher.execute((err, data) => {
     process.exit(0);
   });
 });
-*/
